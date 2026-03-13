@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando para Shopee...</title>
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17990966767"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17990966767');
+
+    function getParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const gclid = getParam('gclid');
+
+    function enviarConversao() {
+      if (gclid) {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17990966767/ic4zCOaKl4gcEO-74YJD'
+        });
+      }
+
+      setTimeout(function(){
+        window.location.href='https://s.shopee.com.br/AUp9bkYMr7';
+      }, 1200);
+    }
+
+    window.onload = enviarConversao;
+  </script>
+</head>
+
+<body>
+  <p style="text-align:center; font-family:Arial; margin-top:50px; font-size:32px;">
+    Redirecionando para a Shopee...
+  </p>
+</body>
+</html>
+<!-- update -->
