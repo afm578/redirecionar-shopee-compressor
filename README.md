@@ -1,0 +1,1 @@
+# redirecionar-shopee-compressor
